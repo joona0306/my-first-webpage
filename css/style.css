@@ -72,6 +72,16 @@ section {
   height: 100%;
   /* background-color: #fff; */
 }
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.5px;
+}
+.section-title em {
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* 헤더 영역 시작 */
 .header {
@@ -471,16 +481,7 @@ section {
   left: 0;
   z-index: 10;
 }
-.keywords .keywords-wrap .keywords-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.5px;
-}
-.keywords .keywords-wrap .keywords-title em {
-  font-weight: 400;
-  font-style: normal;
-}
+
 .keywords .keywords-wrap ul {
   position: relative;
   margin-top: 27px;
@@ -507,11 +508,58 @@ section {
 }
 
 .rank {
+  position: relative;
   width: 100%;
-  height: 384px;
   padding-top: 65px;
-  background-color: steelblue;
+  /* background-color: steelblue; */
 }
+.rank-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  padding-bottom: 105px;
+  display: flex;
+  justify-content: center;
+  background: url("../assets/images/img_keyword.png") left bottom no-repeat;
+  background-size: 342px 284px;
+}
+.rank .inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.rank-list-wrap {
+  position: relative;
+  display: flex;
+  width: calc(100% - 320px);
+  padding-top: 50px;
+}
+.rank-list-wrap > ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.rank-list-wrap > ul:first-child {
+  padding-right: 64px;
+}
+.rank-list-wrap > ul:last-child {
+  padding-left: 64px;
+}
+.rank-list-wrap > ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.rank-list-wrap > ul > li > .num {
+  font-size: 14px;
+}
+.rank-list-wrap > ul > li > a {
+  font-size: 20px;
+}
+
 .festival {
   width: 100%;
   height: 507px;
