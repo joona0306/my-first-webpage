@@ -554,7 +554,36 @@ section {
   gap: 11px;
 }
 .rank-list-wrap > ul > li > .num {
+  display: block;
+  line-height: 22px;
+  text-align: center;
   font-size: 14px;
+  color: #666670;
+  font-weight: 500;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #f2f2f7;
+}
+.rank-list-wrap > ul > li > .num.medal {
+  width: 20px;
+  height: 27px;
+  background: url("../assets/images/rank_top.png") no-repeat center;
+  background-size: 100% auto;
+  border-radius: 0;
+  line-height: 20px;
+}
+.rank-list-wrap > ul > li > .num.medal.gold {
+  color: #9b530c;
+  background-position: 0 0;
+}
+.rank-list-wrap > ul > li > .num.medal.silver {
+  color: #4e4e50;
+  background-position: 0 -27px;
+}
+.rank-list-wrap > ul > li > .num.medal.bronze {
+  color: #763e1e;
+  background-position: 0 -54px;
 }
 .rank-list-wrap > ul > li > a {
   font-size: 20px;
