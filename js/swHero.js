@@ -27,7 +27,7 @@ const swHero = new Swiper(".sw-hero", {
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".sw-hero .swiper-pagination",
     type: "fraction",
   },
   navigation: {
