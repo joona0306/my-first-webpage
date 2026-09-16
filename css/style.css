@@ -643,8 +643,21 @@ section {
   width: 928px;
 }
 .festival .festival-prev-btn {
+  /* 
+  너비 10px, 높이 16px, 이전 이미지 백그라운드로 삽입
+  */
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
 }
 .festival .festival-next-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_next.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
 }
 .festival .swiper-pagination {
   position: static;
@@ -652,8 +665,13 @@ section {
   margin: 0 16px;
 }
 .festival .swiper-pagination .swiper-pagination-current {
+  width: 10px;
+  margin-right: 3px;
+  font-weight: 600;
 }
 .festival .swiper-pagination .swiper-pagination-total {
+  margin-left: 3px;
+  font-weight: 300;
 }
 
 .festival-slide {
@@ -675,6 +693,15 @@ section {
 }
 .sw-festival .swiper-slide:nth-child(odd) {
   margin-top: 50px;
+}
+.sw-festival .swiper-slide a {
+  border-radius: 10px;
+  overflow: hidden; /* 피그마에서는 Clip Content 체크에 해당 */
+}
+
+.sw-festival .swiper-slide.swiper-slide-active a {
+  border: 4px solid #7a45e5;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
 }
 
 .alio {
