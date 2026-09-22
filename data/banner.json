@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "bannerImg": "assets/images/banner-slide-1.png",
+    "desc": "축제 먹거리 리뷰하고 선물 받자!",
+    "bannerTitle": "축제 먹거리 현장 검증 이벤트",
+    "linkLabel": "이벤트 참여하기"
+  },
+  {
+    "id": 2,
+    "bannerImg": "assets/images/banner-slide-2.png",
+    "desc": "즐거운 맛이 있는 축제!",
+    "bannerTitle": "축제 먹거리 알리오 캠페인",
+    "linkLabel": "캠페인 자세히 알아보기"
+  },
+  {
+    "id": 3,
+    "bannerImg": "assets/images/banner-slide-3.png",
+    "desc": "설렘 가득한 오늘, 당신이 만날 축제는?",
+    "bannerTitle": "행운의 축제 티켓 자판기",
+    "linkLabel": "랜덤 티켓 발급받기"
+  }
+]

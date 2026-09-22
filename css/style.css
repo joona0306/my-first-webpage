@@ -802,11 +802,119 @@ section {
 }
 
 .banner {
+  position: relative;
   width: 100%;
-  height: 229px;
+  /* height: 229px; */
   padding-top: 65px;
-  background-color: chocolate;
+  /* background-color: chocolate; */
 }
+.banner .inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.banner .pagination {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 13px; */
+}
+.banner .pagination .banner-prev-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_prev.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .banner-next-btn {
+  width: 10px;
+  height: 16px;
+  background: url("../assets/icons/main_slide_next.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  text-indent: -9999px;
+}
+.banner .pagination .swiper-pagination {
+  position: static;
+  width: auto;
+  margin: 0 16px;
+}
+.banner .pagination .swiper-pagination .swiper-pagination-current {
+  display: inline-block;
+  width: 10px;
+  margin-right: 3px;
+  font-weight: 600;
+}
+.banner .pagination .swiper-pagination .swiper-pagination-total {
+  margin-left: 3px;
+  font-weight: 300;
+}
+.banner .pagination .play-stop-btn {
+  width: 12px;
+  height: 14px;
+  background: url("../assets/icons/slide_stop_bk.png") center no-repeat;
+  background-size: 8px 10px;
+  text-indent: -9999px;
+  margin-right: 16px;
+}
+
+.sw-banner {
+  position: relative;
+  /* width: 100%; */
+}
+.sw-banner .swiper-wrapper {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide {
+  position: relative;
+}
+.sw-banner .swiper-wrapper .swiper-slide a {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sw-banner .swiper-wrapper .swiper-slide a > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .desc {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap strong {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  gap: 4px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: fit-content;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn span {
+  font-size: 14px;
+}
+.sw-banner .swiper-wrapper .swiper-slide a .text-wrap .link-btn img {
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+
 .theme {
   width: 100%;
   height: 262px;

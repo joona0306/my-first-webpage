@@ -27,6 +27,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/swHero.js" defer></script>
     <script src="js/swFestival.js" defer></script>
+    <script src="js/swBanner.js" defer></script>
   </head>
 
   <body>
@@ -594,7 +595,21 @@
           </div>
         </section>
         <section class="banner">
-          <div class="inner">배너 슬라이드 영역</div>
+          <div class="inner">
+            <!-- Swiper -->
+            <div class="pagination">
+              <button class="banner-prev-btn">이전</button>
+              <div class="swiper-pagination"></div>
+              <button class="play-stop-btn">정지</button>
+              <button class="banner-next-btn">다음</button>
+            </div>
+
+            <div class="swiper sw-banner">
+              <div class="swiper-wrapper">
+                <!-- swBanner.js 에서 동적으로 swiper-slide 생성 -->
+              </div>
+            </div>
+          </div>
         </section>
         <section class="theme">
           <div class="inner">테마 축제 영역</div>
